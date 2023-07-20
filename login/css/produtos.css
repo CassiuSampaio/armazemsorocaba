@@ -1,0 +1,48 @@
+.price {
+    height: 50px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 220px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    text-align: center;
+    border-color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.produto {
+
+text-align: center;
+
+}
+
+.sabor {
+
+text-align: center;
+
+
+}
+
+.peso {
+
+text-align: center;
+
+}
+
+.seller {
+
+justify-content: space-between;
+
+}
+
+.seller img {
+
+    width: 160px;
+    height: 300px;
+    padding-top: 80px;
+    vertical-align: top;
+
+}
