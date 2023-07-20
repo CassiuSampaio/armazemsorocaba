@@ -1,0 +1,91 @@
+#app {
+
+    /*position: absolute;*/
+    background-color: var(--primary-color);
+    width: 80vh;
+    height: auto;
+    box-shadow: 4px 4px 20px #888;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 25vh 25vh 30vh;
+    margin-left: 40vh;
+}
+
+
+
+.formulario {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.startHidden {
+
+    display: none;
+}
+
+input {
+
+    width: 80%;
+    margin: 10px;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 8px;
+    border-color: var(--section-bg-color);
+
+}
+
+/* BOTÕES DO FORMULÁRIO */
+
+
+#submitAuthForm {
+
+    position:relative;
+    background-color: var(--secondary-color);
+    font-size: 15px;
+    color: var(--white-color);
+    padding: 10px;
+    margin: 4px;
+    border-radius: 20px;
+    width: auto;
+    align-content: center;
+
+
+}
+
+#submitAuthForm:hover {
+
+    background-color: var(--white-color);
+    color: var(--section-bg-color)
+}
+
+.formbtn {
+
+    background-color: var(--secondary-color);
+    font-size: 15px;
+    color: var(--white-color);
+    padding: 10px;
+    margin: 4px;
+    border-radius: 20px;
+    width: auto;
+    align-content: center;
+
+}
+
+.formbtn:hover {
+
+    background-color: var(--white-color);
+    color: var(--section-bg-color)
+
+}
+
+
+#loading {
+
+    position: absolute;
+    top: calc(50% - 100px );
+    left: calc(50% - 100px );
+    z-index: 1;
+}
