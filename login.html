@@ -17,7 +17,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="styles.css">
+    <!--CSS Login-->
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -29,6 +29,8 @@
 
     <link href="css/tooplate-waso-strategy.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/login/css/form.css">
+
 
 
 
@@ -37,6 +39,7 @@
 
 <body id="section_1">
 
+    <!-- Barra laranja acima da toolbar -->
     <header class="site-header">
         <div class="container">
             <div class="row align-items-center">
@@ -63,6 +66,7 @@
         </div>
     </header>
 
+    <!-- Toolbar -->
     <nav class="navbar navbar-expand-lg bg-white shadow-lg">
         <div class="container">
 
@@ -117,37 +121,42 @@
 
     <main>
 
-        <div class="" id="app">
-            <!--Logotipo do TodoList-->
-            <div class="center">
-                <img src="images/logos/armazemsmall.jpg">
-            </div>
+        <div class="formulario" id="app">
 
+            <div id="loading">
+                
+                <img src="/images/icons/loading.gif" alt="carregando" srcset="">
+
+            </div>
+            
             <!--Conteúdo destinado para usuários não autenticados-->
-            <div id="auth" class="center">
+            <div id="auth" class="auth">
                 <!--Formulário de autenticação-->
                 <form id="authForm">
                     <h3 id="authFormTitle">Acesse a sua conta para continuar</h3>
 
                     <label for="email">E-mail: </label>
-                    <input id="authFormInputEmail" type="email" placeholder="E-mail" id="email">
-
+                    <br>
+                    <input  type="email" placeholder="exemplo@exemplo.com" id="email">
+                    <br>
+                    
                     <label for="password">Senha: </label>
-                    <input id="authFormInputPassword" type="password" placeholder="Senha" id="password">
-
-                    <button type="submit" id="submitAuthForm">Acessar</button>
+                    <br>
+                    <input type="password" placeholder="********" id="password">
+                    <br>                    
+                    <button class="formbtn1" type="submit" id="submitAuthForm">Acessar</button>
                 </form>
 
                 <!--Alternar o fomulário de autenticação para o cadastro de novas contas-->
-                <p id="register">
+                <p id="register" class="">
                     Não possui uma conta?
-                    <button onclick="toggleToRegister()" class="alternative">Cadastrar uma nova conta</button>
+                    <button onclick="toggleToRegister()" class="formbtn">Cadastrar uma nova conta</button>
                 </p>
 
                 <!--Alternar o fomulário de autenticação para o acesso de contas já existentes-->
                 <p id="access" class="startHidden">
                     Já possui uma conta?
-                    <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
+                    <button onclick="toggleToAccess()" class="formbtn">Acesse a sua conta</button>
                 </p>
             </div>
         </div>
@@ -193,7 +202,7 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT FILES -->
+    <!-- Arquivos JAVASCRIPT -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
@@ -201,14 +210,16 @@
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/utils.js"></script>
+    <script src="login/js/utils.js"></script>
+    <script src="login/js/auth.js"></script>
+
 
     <!--Recursos do Firebase-->
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
 
-    <script src="js/firebase.js"></script>
-    <script src="js/auth.js"></script>
+    <script src="login/js/firebase.js"></script>
+    
 
 
 </body>

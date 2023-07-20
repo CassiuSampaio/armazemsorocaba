@@ -1,18 +1,17 @@
 
-// Traduz para português brasileiro a autenticação do Firebase
-firebase.auth().languageCode = 'pt-BR'
-
 // Função que trata a submissão do formulário de autenticação
 authForm.onsubmit = function (event) {
-  showItem(loading)
+
+  //showItem(loading)
   event.preventDefault()
+  
   if (authForm.submitAuthForm.innerHTML == 'Acessar') {
     firebase.auth().signInWithEmailAndPassword(authForm.email.value, authForm.password.value).catch(function (error) {
-      showError('Falha no acesso: ', error)
+     
     })
   } else {
     firebase.auth().createUserWithEmailAndPassword(authForm.email.value, authForm.password.value).catch(function (error) {
-      showError('Falha no cadastro: ', error)
+      alert('Falha no cadastro: '+ error)
     })
   }
 }

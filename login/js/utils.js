@@ -24,18 +24,24 @@ var userImg = document.getElementById('userImg')
 function toggleToRegister() {
   authForm.submitAuthForm.innerHTML = 'Cadastrar conta'
   authFormTitle.innerHTML = 'Insira seus dados para se cadastrar'
+  authForm.email.placeholder = 'Insira um e-mail válido para se cadastrar'
+  authForm.password.placeholder = 'utilize, no minimo letras e números'
+  showItem(access) // Mostrar atalho para acessar conta
   hideItem(register) // Esconder atalho para cadastrar conta
   hideItem(passwordReset) // Esconder a opção de redefinição de senha
-  showItem(access) // Mostrar atalho para acessar conta
+  
 }
 
 // Alterar o formulário de autenticação para o acesso de contas já existentes
 function toggleToAccess() {
   authForm.submitAuthForm.innerHTML = 'Acessar'
   authFormTitle.innerHTML = 'Acesse a sua conta para continuar'
+  authForm.email.placeholder = 'exemplo@exemplo.com'
+  authForm.password.placeholder = '********'  
   hideItem(access) // Esconder atalho para acessar conta
-  showItem(passwordReset) // Mostrar a opção de redefinição de senha
   showItem(register) // Mostrar atalho para cadastrar conta
+  showItem(passwordReset) // Mostrar a opção de redefinição de senha
+  
 }
 
 // Simplifica a exibição de elementos da página
