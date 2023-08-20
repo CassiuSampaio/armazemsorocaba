@@ -348,7 +348,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -602,8 +602,9 @@ strong {
 }
 
 .projects-small-title {
-  color: var(--primary-color);
+  color: var(--white-color);
   text-transform: uppercase;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .projects-title {
@@ -611,7 +612,7 @@ strong {
 }
 
 .projects-equipe {
-  color: var(--dark-color);
+  color: var(--secondary-color);
 }
 
 .projects-image {
