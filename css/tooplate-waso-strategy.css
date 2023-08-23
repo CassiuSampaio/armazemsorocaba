@@ -1,32 +1,31 @@
-
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #ffc107;
-  --secondary-color:              #eb8a0b;
-  --section-bg-color:             #1e29c9;
-  --dark-color:                   #020941;
-  --p-color:                      #485a91;
+  --white-color: #ffffff;
+  --primary-color: #ffc107;
+  --secondary-color: #eb8a0b;
+  --section-bg-color: #1e29c9;
+  --dark-color: #020941;
+  --p-color: #485a91;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family: 'DM Sans', sans-serif;
 
-  --h1-font-size:                 60px;
-  --h2-font-size:                 42px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               14px;
-  --copyright-text-font-size:     16px;
+  --h1-font-size: 60px;
+  --h2-font-size: 42px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 14px;
+  --copyright-text-font-size: 16px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family); 
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
 
 
@@ -93,7 +92,7 @@ ul li {
   font-weight: var(--font-weight-normal);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -185,7 +184,7 @@ strong {
   border-top-color: var(--primary-color);
   border-right-color: var(--primary-color);
   border-bottom-color: var(--primary-color);
-  transition: border-top-color .15s linear,border-right-color .15s linear .1s,border-bottom-color .15s linear .2s;
+  transition: border-top-color .15s linear, border-right-color .15s linear .1s, border-bottom-color .15s linear .2s;
 }
 
 .custom-icon:hover::after {
@@ -193,7 +192,7 @@ strong {
   border-left-width: 3px;
   border-right-width: 3px;
   transform: rotate(270deg);
-  transition: transform .4s linear 0s,border-left-width 0s linear .35s;
+  transition: transform .4s linear 0s, border-left-width 0s linear .35s;
 }
 
 .play-icon::before {
@@ -263,7 +262,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .projects-detail-page .navbar-nav .nav-link.active:hover {
   color: var(--secondary-color);
@@ -442,7 +441,7 @@ strong {
   width: 100%;
   height: 100%;
   margin-left: auto;
-  
+
 }
 
 .carousel-image {
@@ -451,7 +450,7 @@ strong {
   object-fit: cover;
 }
 
-.carousel-control-next, 
+.carousel-control-next,
 .carousel-control-prev {
   top: auto;
   bottom: 50px;
@@ -463,7 +462,7 @@ strong {
   right: 70px;
 }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 70px;
   height: 70px;
@@ -532,17 +531,17 @@ strong {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   border-left-color: var(--secondary-color);
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 .nav-tabs .nav-link.active h3,
-.nav-tabs .nav-link:focus h3, 
+.nav-tabs .nav-link:focus h3,
 .nav-tabs .nav-link:hover h3 {
   color: var(--primary-color);
 }
@@ -566,7 +565,7 @@ strong {
 
 .projects-thumb:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 .projects-thumb:hover .projects-image {
@@ -593,7 +592,7 @@ strong {
 }
 
 .projects-title-wrap-equipe {
-  
+
   position: absolute;
   bottom: 0;
   right: 0;
@@ -777,12 +776,12 @@ strong {
 
 .site-footer a {
   color: var(--white-color);
-  
+
 }
 
 .site-footer a:hover {
   color: var(--dark-color);
-  
+
 }
 
 
@@ -946,7 +945,7 @@ strong {
     font-size: 14px;
   }
 
-  .carousel-control-next, 
+  .carousel-control-next,
   .carousel-control-prev {
     bottom: 20px;
   }
@@ -976,21 +975,21 @@ strong {
 
 #app1 {
 
-   box-shadow: 4px 4px 20px #888;
+  box-shadow: 4px 4px 20px #888;
 
 }
 
 .startHidden {
 
-display: none;
+  display: none;
 
 }
 
 input[type="email"],
 input[type="password"] {
-  
- 
-border-radius: 99px;
+
+
+  border-radius: 99px;
 }
 
 /*---------------------------------------
@@ -1023,7 +1022,7 @@ border-radius: 99px;
 a.btn {
   background: @teal;
   border-radius: 4px;
-  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
   color: @white;
   display: inline-block;
   padding: 6px 30px 8px;
@@ -1033,7 +1032,7 @@ a.btn {
 }
 
 .no-touch a.btn:hover {
-  background: lighten(@teal,2.5);
+  background: lighten(@teal, 2.5);
   box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
   transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
@@ -1041,9 +1040,9 @@ a.btn {
 
 .no-touch a.btn:active,
 a.btn:active {
-  background: darken(@teal,2.5);
-  box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
-  transform: translate3d(0,1px,0);
+  background: darken(@teal, 2.5);
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
   transition: all 0.025s 0s ease-out;
 }
 
@@ -1064,97 +1063,106 @@ div.card {
   transition: all 0.3s 0s ease-in;
   width: 300px;
   z-index: 1;
+}
 
-  /*img {
+
+/*img {
     max-width: 300px;
   }*/
-  
-  .card__image-holder {
-    background: rgba(0,0,0,0.1);
-    height: 0;
-    padding-bottom: 75%;
-  }
 
-  div.card-title {
-    background: @white;
-    padding: 6px 15px 10px;
-    position: relative;
-    z-index: 0;
-    
-    a.toggle-info {
-      border-radius: 32px;
-      height: 32px;
-      padding: 0;
-      position: absolute;
-      right: 15px;
-      top: 10px;
-      width: 32px;
-      
-      span {
-        background: @white;
-        display: block;
-        height: 2px;
-        position: absolute;
-        top: 16px;
-        transition: all 0.15s 0s ease-out;
-        width: 12px;
-      }
-      
-      span.left {
-        right: 14px;
-        transform: rotate(45deg);
-      }
-      span.right {
-        left: 14px;
-        transform: rotate(-45deg);
-      }
-    }
-    
-    h2 {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: -0.05em;
-      margin: 0;
-      padding: 0;
-      
-      small {
-        display: block;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: -0.025em;
-      }
-    }
-  }
-
-  div.card-description {
-    padding: 0 15px 10px;
-    position: relative;
-    font-size: 14px;
-  }
-
-  div.card-actions {
-    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
-    padding: 10px 15px 20px;
-    text-align: center;
-  }
-  
-  div.card-flap {
-    background: darken(@white,15);
-    position: absolute;
-    width: 100%;
-    transform-origin: top;
-    transform: rotateX(-90deg);
-  }
-  div.flap1 {
-    transition: all 0.3s 0.3s ease-out;
-    z-index: -1;
-  }
-  div.flap2 {
-    transition: all 0.3s 0s ease-out;
-    z-index: -2;
-  }
-  
+.card__image-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 75%;
 }
+
+div.card-title {
+  background: @white;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+
+span {
+
+  background: @white;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+
+span.left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+
+span.right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+small {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+
+
+div.card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+div.card-flap {
+  background: darken(@white, 15);
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+
+div.flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+div.flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+
 
 div.cards.showing {
   div.card {
@@ -1164,7 +1172,7 @@ div.cards.showing {
   }
 }
 
-.no-touch  div.cards.showing {
+.no-touch div.cards.showing {
   div.card:hover {
     opacity: 0.94;
     transform: scale(0.92);
@@ -1178,24 +1186,30 @@ div.card.show {
   div.card-title {
     a.toggle-info {
       background: @salmon !important;
+
       span {
         top: 15px;
       }
+
       span.left {
         right: 10px;
       }
+
       span.right {
         left: 10px;
       }
     }
   }
+
   div.card-flap {
     background: @white;
     transform: rotateX(0deg);
   }
+
   div.flap1 {
     transition: all 0.3s 0s ease-out;
   }
+
   div.flap2 {
     transition: all 0.3s 0.2s ease-out;
   }
